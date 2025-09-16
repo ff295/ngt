@@ -1,0 +1,46 @@
+B.  jQuery Selectors, jQuery Hide and Show Effects
+
+#}	jQuery Selectors CODE:
+<html>
+<head>
+<title>jquery selector</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+<body>
+<p class="cls">this is class selector</p>
+<p id="id1">this is id selector</p>
+<p id="id2">this is tag selector</p>
+<script>
+$(document).ready(function(){
+$(".cls").css("color","blue");
+$("#id1").css("font-size","20px");
+$("#id2").css("font-weight","bold");
+});
+</script>
+</body>
+</html>
+
+#} jQuery Hide and Show Effects CODE:
+<html>
+<head>
+<title>hide show example</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+</head>
+<body>
+<p id="text">this is a paragraph</p>
+<button id="hide">hide</button>
+<button id="show">show</button>
+<script>
+$(document).ready(function(){
+$("#hide").click(function(){
+$("#text").hide();
+});
+$("#show").click(function(){
+$("#text").show();
+});
+});
+</script>
+</body>
+</html>
+
