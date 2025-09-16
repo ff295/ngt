@@ -1,0 +1,46 @@
+A.  jQuery Basic, jQuery Events.
+
+#} jQuery Basic CODE:
+<html>
+<head>
+<title>basic jQuery example</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+</head>
+<body>
+<h2>HELLO, jQuery!</h2>
+<button id="btn">Click me</button>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+$("h2").text("welcome to jquery!");
+});
+});
+</script>
+</body>
+</html>
+
+#}jQuery Events CODE:
+<html>
+<head>
+<title>jquery events</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+<body>
+<p id="para">hover or click me</p>
+<script>
+$(document).ready(function(){
+$("#para").click(function(){
+$(this).css("color","red");
+});
+$("#para").mouseenter(function(){
+$(this).css("background","yellow");
+});
+$("#para").mouseleave(function(){
+$(this).css("background","white");
+});
+});
+</script>
+</body>
+
+
