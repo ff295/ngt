@@ -1,0 +1,53 @@
+A.  jQuery Animation Effects, jQuery Chaining.
+
+#}	jQuery Animation Effects CODE:
+<html>
+<head>
+<title>JQUERY ANIMATION</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+<style>
+#box{width:100px;height:100px;background:purple;position:relative;}
+</style>
+</head>
+<body>
+<button id="animate">ANIMATE BOX</button>
+<div id="box"></div>
+<script>
+$(document).ready(function(){
+$("#animate").click(function(){
+$("#box").animate({
+left:'250px',
+width:'150px',
+height:'150px',
+opacity:0.5
+},2000);
+});
+});
+</script>
+</body>
+</html>
+
+#}	jQuery Chaining CODE:
+<html>
+<head>
+<title>JQUERY CHAINING</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+<body>
+<p id="para">WATCH ME CHANGE!!!</p>
+<button id="chain">CLICK ME</button>
+<script>
+$(document).ready(function(){
+$("#chain").click(function(){
+$("#para").css("color","red")
+.slideUp(1000)
+.slideDown(1000)
+.fadeIn(1000)
+.fadeOut(1000);
+});
+});
+</script>
+</body>
+</html>
+
